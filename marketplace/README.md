@@ -30,7 +30,7 @@ Clone esse projeto em seu computador com o comando (Chave SSH necessária):
 
 ```bash
 #!/bin/bash
-$ git clone git@https://github.com/CarlosKohaute/marketplace
+$ git clone git@https://github.com/CarlosKohaute/M05-MarketPlace/tree/main/marketplace
 ```
 
 Acesse a pasta do projeto:
