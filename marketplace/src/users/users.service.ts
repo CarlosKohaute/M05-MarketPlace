@@ -12,7 +12,6 @@ export class UsersService {
   private userSelect = {
     id: true,
     name: true,
-    IsAdmin: true,
     email: true,
     imageURL: true,
     updatedAt: true,
