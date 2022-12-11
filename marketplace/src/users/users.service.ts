@@ -5,6 +5,7 @@ import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { handleErrorConstraintUnique } from 'src/utils/handle-erros-unique.util';
 import { User } from './entities/user.entity';
+import { Favorite } from 'src/favorites/entities/favorite.entitie';
 
 @Injectable()
 export class UsersService {

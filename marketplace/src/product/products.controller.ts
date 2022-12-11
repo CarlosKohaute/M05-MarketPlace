@@ -9,8 +9,8 @@ import {
   Delete,
   UseGuards,
 } from '@nestjs/common';
-import { ProductsService } from './products.service';
-import { CreateProductDto } from './dto/create-product.dto';
+import { ProductsService } from './product.service';
+import { CreateProductDto } from './dto/create-product';
 import { UpdateProductDto } from './dto/update-product.dto';
 import { ApiBearerAuth, ApiOperation, ApiTags } from '@nestjs/swagger';
 import { Product } from './entities/product.entity';
