@@ -25,6 +25,7 @@ export class UsersService {
       name: dto.name,
       email: dto.email,
       password: hashedPassword,
+      imageURL: dto.imageURL,
     };
 
     return this.prisma.user
