@@ -12,6 +12,7 @@ export class UsersService {
   private userSelect = {
     id: true,
     name: true,
+    IsAdmin: true,
     email: true,
     imageURL: true,
     updatedAt: true,
@@ -71,7 +72,7 @@ export class UsersService {
       .catch(handleErrorConstraintUnique);
   }
 
-  async remove(id: string) {
+  async remove(id: string): Promise<User> {
     await this.verifyIdAndReturnUser(id);
 
     return this.prisma.user.delete({
