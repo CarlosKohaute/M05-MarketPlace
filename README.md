@@ -19,8 +19,8 @@ Foi utilizado também autenticação, filtragem de buscas, documentação, cript
 
 ## Pré-requisitos
 
-**Node** com versão superior ou igual 16.13.2 - [Node Download](https://nodejs.org/pt-br/download/)<br>
-**NPM** com versão superior ou igual 8.1.2 - [Npm Download](https://www.npmjs.com/package/download)<br>
+**Node** com versão superior ou igual 16.17.1 - [Node Download](https://nodejs.org/pt-br/download/)<br>
+**NPM** com versão superior ou igual 8.15.0 - [Npm Download](https://www.npmjs.com/package/download)<br>
 **Nest.JS** com versão superior ou igual 8.2.6 - [Nest Download](https://docs.nestjs.com/)<br>
 **PostgreSQL** com versão superior ou igual 8.2.6 - [PostgreSQL Download](https://www.postgresql.org/download/)<br>
 
@@ -59,7 +59,7 @@ $ npm run start:dev
 Para conseguir trabalhar com o banco de dados você deverá criar um arquivo .env e adicionar uma url de conexão com seu Postgres local com a chave DATABASE_URL.
 
 ```md
-DATABASE_URL= NÃO CRIADO AINDA
+DATABASE_URL= postgresql://postgres:***\*\***@localhost:5432/mydb?schema=public
 ```
 
 ## Funcionalidades

@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import { UnprocessableEntityException } from '@nestjs/common';
 
 export const handleErrorConstraintUnique = (error: Error): never => {

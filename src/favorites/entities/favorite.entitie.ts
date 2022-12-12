@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 export class Favorite {
   id: string | boolean;
   createdAt: Date | boolean;

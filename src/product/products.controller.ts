@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import {
   Controller,
   Get,
@@ -12,7 +11,7 @@ import {
 import { ProductsService } from './product.service';
 import { CreateProductDto } from './dto/create-product';
 import { UpdateProductDto } from './dto/update-product.dto';
-import {  ApiBearerAuth, ApiOperation, ApiTags } from '@nestjs/swagger';
+import { ApiBearerAuth, ApiOperation, ApiTags } from '@nestjs/swagger';
 import { Product } from './entities/product.entity';
 import { FavoriteProductDto } from '../favorites/dto/favorite.dto';
 import { Favorite } from 'src/favorites/entities/favorite.entitie';
