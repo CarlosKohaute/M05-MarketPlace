@@ -17,6 +17,15 @@ export class CreateUserDto {
   })
   name: string;
 
+  @IsString()
+  @IsNotEmpty()
+  @ApiProperty({
+    example:
+      '11111111111',
+    description: 'CPF do usuário',
+  })
+  cpf: string;
+
   @IsEmail()
   @ApiProperty({
     example: 'carlos.kohaute@gmail.com',

@@ -12,6 +12,7 @@ export class UsersService {
   private userSelect = {
     id: true,
     name: true,
+    cpf: true,
     email: true,
     imageURL: true,
     updatedAt: true,
@@ -25,6 +26,7 @@ export class UsersService {
     const data: CreateUserDto = {
       name: dto.name,
       email: dto.email,
+      cpf: dto.cpf,
       password: hashedPassword,
       imageURL: dto.imageURL,
     };
