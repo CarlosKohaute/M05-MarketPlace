@@ -5,6 +5,8 @@ import {
   IsNotEmpty,
   IsString,
   Matches,
+  MaxLength,
+  minLength,
   MinLength,
 } from 'class-validator';
 
@@ -19,9 +21,10 @@ export class CreateUserDto {
 
   @IsString()
   @IsNotEmpty()
+  @MinLength(12)
+  @MaxLength(12)
   @ApiProperty({
-    example:
-      '11111111111',
+    example: '11111111111',
     description: 'CPF do usuário',
   })
   cpf: string;
