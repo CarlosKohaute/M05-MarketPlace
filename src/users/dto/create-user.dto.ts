@@ -19,7 +19,7 @@ export class CreateUserDto {
 
   @IsString()
   @IsNotEmpty()
-  @MinLength(12)
+  @MinLength(11)
   @MaxLength(12)
   @ApiProperty({
     example: '11111111111',
